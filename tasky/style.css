@@ -1,0 +1,113 @@
+body {
+    background-color: #ffff;
+    color: #333333;
+    padding: 1rem;
+}
+
+#header {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    margin-top: 3.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+#greeting {
+    margin-top: 4rem;
+}
+
+
+#all-tasks {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    min-height: 25rem;
+    width: 22rem;
+    margin: 1rem auto;
+    border: 5px solid #f5f5f5;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#tasks {
+    padding: 1rem;
+    line-height: 3rem;
+}
+
+.btn {
+    height: 43px;
+    padding: 6px;
+    border: #CBCBCB;
+    border-radius: 4px;
+    background-color: #333333;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+
+
+.btn:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.addBtn {
+    margin: 0;
+    padding: 0;
+}
+
+
+#task {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 2px solid gray;
+    border-radius: 4px;
+    min-width: 18rem;
+    margin: 1.5rem 0.3rem;
+    padding: 0.5rem;
+}
+
+#task:focus {
+    outline: none;
+    border-color: #333333;
+}
+
+.task-status {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+}
+
+input[type='checkbox']:checked {
+    background-color: #333333;
+}
+
+input[type='checkbox']:checked::after {
+    content: '✓';
+    color: #CBCBCB;
+    padding: 3px;
+}
+
+label {
+    margin-left: 6px;
+    font-size: 1rem;
+}

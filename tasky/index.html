@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasky</title>
-    <link rel="stylesheet" href="style.css" />
+    <link class="change-mode" rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +15,11 @@
   </head>
 
   <body>
+    <div class="mode">
+      <button class="mode-btn">
+        <img class="mode-img" src="../assets/dark-mode.png" alt="" />
+      </button>
+    </div>
     <div id="header">
       <h1>Tasky</h1>
       <h2>Plan your day!</h2>
@@ -30,10 +35,17 @@
     <div id="all-tasks">
       <p class="task-status"></p>
       <form id="tasks">
-          <!-- <input type="checkbox"> 
+        <!-- <input type="checkbox"> 
           <label for="">Go to the Gym!</label> -->
       </form>
     </div>
+
+    <nav>
+      built with 🖤 by
+      <a class="nav-link" target="_blank" href="https://github.com/emmaibu"
+        >node</a
+      >
+    </nav>
 
     <script src="script.js"></script>
   </body>

@@ -66,10 +66,10 @@ modeBtn.addEventListener("click", function () {
   if (modeAttribute == "style.css") {
     mode.setAttribute("href", "dark-mode.css");
     modeBtn.innerHTML =
-      '<img class="mode-img" src="../assets/light-mode.png" alt="">';
+      '<img class="mode-img" src="light-mode.png" alt="">';
   } else {
     mode.setAttribute("href", "style.css");
     modeBtn.innerHTML =
-      '<img class="mode-img" src="../assets/dark-mode.png" alt="">';
+      '<img class="mode-img" src="dark-mode.png" alt="">';
   }
 });

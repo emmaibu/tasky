@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasky</title>
-    <link class="change-mode" rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <div class="mode">
-      <button class="mode-btn">
-        <img class="mode-img" src="dark-mode.png" alt="" />
-      </button>
-    </div>
-    <div id="header">
-      <h1>Tasky</h1>
-      <h2>Plan your day!</h2>
-
-      <form id="add-task" action="">
-        <input id="task" type="text" placeholder="add a task" />
-        <button class="btn" type="submit">
-          <img class="addBtn" src="add-btn.png" alt="" />
-        </button>
-      </form>
+<body class="bg-blue-300">
+    <div class="p-6 text-center text-gray-50">
+        <h1 class=" text-7xl  p-4 ">Tasky</h1>
+        <h2 class="text-3xl p-2">Plan your day!</h2>
     </div>
 
-    <div id="all-tasks">
-      <p class="task-status"></p>
-      <form id="tasks">
-        <!-- <input type="checkbox"> 
-          <label for="">Go to the Gym!</label> -->
-      </form>
+    <form id="add-task" class="items-center text-gray-50 flex justify-center m-6 p-2">
+        <input id="task" class="rounded h-10 p-2 m-1 text-gray-500 w-70 outline-none shadow-2xl opacity-50 hover:opacity-100" type="text" placeholder="add a task">
+        <button id="btn" class="shadow-2xl bg-blue-900 h-10 w-8 flex items-center justify-center rounded cursor-pointer hover:opacity-100 opacity-50" type="submit"><img src="add-btn.png" alt=""></button>
+    </form>
+
+    <div id="all-tasks" class="min-h-96 bg-blue-900 w-96 rounded-xl m-auto text-gray-50 p-5 shadow-2xl">
+        <p class="text-center text-gray-50 p-4 text-lg antialiased font-bold opacity-60" id="task-status"></p>
+        <form class="p-2 leading-10" id="tasks"></form>
     </div>
 
-    <nav>
-      built with 🖤 by
-      <a class="nav-link" target="_blank" href="https://github.com/emmaibu"
-        >node</a
-      >
+    <nav class="text-center text-gray-50 mt-9 mb-3 ">
+        built with 💙 by
+        <a class="font-bold" target="_blank" href="https://github.com/emmaibu">node</a>
     </nav>
 
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
+
 </html>
